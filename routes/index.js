@@ -602,25 +602,25 @@ function postConvertAdmin(userExistsData, ListflagData, bitly,uFinalUrl1,nextId,
                       if (userExists1.telegram == false && userExists1.whatsapp == false) {
                           console.log('---0');
                       } else if (userExists1.telegram == true && userExists1.whatsapp == true) {
-                          if(userExistsUrl != ""){
-                              if(userExists1.type == "photo" ){
-                                 teleAutoImgChannel(finalAmazon,userExistsUrl,"@dhamakaoffer11",ListflagData.kudart_token);
-                              }else{
-                                 teleAutoVideoPostChannel(finalAmazon,userExistsUrl,"@dhamakaoffer11",ListflagData.kudart_token);
-                              }
-                          }else{
+                        //   if(userExistsUrl != ""){
+                        //       if(userExists1.type == "photo" ){
+                        //          teleAutoImgChannel(finalAmazon,userExistsUrl,"@dhamakaoffer11",ListflagData.kudart_token);
+                        //       }else{
+                        //          teleAutoVideoPostChannel(finalAmazon,userExistsUrl,"@dhamakaoffer11",ListflagData.kudart_token);
+                        //       }
+                        //   }else{
                              teleAutoPostChannel(finalAmazon,"@dhamakaoffer11",ListflagData.kudart_token);
-                          }
+                        //   }
                       } else if (userExists1.telegram == true && userExists1.whatsapp == false) {
-                        if(userExistsUrl != ""){
-                            if(userExists1.type == "photo" ){
-                               teleAutoImgChannel(finalAmazon,userExistsUrl,"@dhamakaoffer11",ListflagData.kudart_token);
-                            }else{
-                               teleAutoVideoPostChannel(finalAmazon,userExistsUrl,"@dhamakaoffer11",ListflagData.kudart_token);
-                            }
-                        }else{
+                        // if(userExistsUrl != ""){
+                        //     if(userExists1.type == "photo" ){
+                        //        teleAutoImgChannel(finalAmazon,userExistsUrl,"@dhamakaoffer11",ListflagData.kudart_token);
+                        //     }else{
+                        //        teleAutoVideoPostChannel(finalAmazon,userExistsUrl,"@dhamakaoffer11",ListflagData.kudart_token);
+                        //     }
+                        // }else{
                            teleAutoPostChannel(finalAmazon,"@dhamakaoffer11",ListflagData.kudart_token);
-                        }
+                        // }
                       } else if (userExists1.telegram == false && userExists1.whatsapp == true) {
                         console.log('---1');
                       } else {
@@ -1125,17 +1125,17 @@ function postConvert(userExists, ListflagData, bitly,uFinalUrl1,nextId,ListflagA
                                     if (ListflagData.ihd_tele_flag == '0' && ListflagData.ihd_watts_flag == '0') {
                                         console.log('---0');
                                     } else if (ListflagData.ihd_tele_flag == '1' && ListflagData.ihd_watts_flag == '1') {
-                                          if(userExists[0].text_img != undefined && ListflagData.tele_photo_post == '1'){
-                                            teleAutoImgChannel(finalAmazon,userExists[0].text_img,"@dhamakaoffer11",ListflagData.kudart_token);
-                                          }else{
+                                        //   if(userExists[0].text_img != undefined && ListflagData.tele_photo_post == '1'){
+                                        //     teleAutoImgChannel(finalAmazon,userExists[0].text_img,"@dhamakaoffer11",ListflagData.kudart_token);
+                                        //   }else{
                                             teleAutoPostChannel(finalAmazon,"@dhamakaoffer11",ListflagData.kudart_token);
-                                          }
+                                        //   }
                                     } else if (ListflagData.ihd_tele_flag == '1' && ListflagData.ihd_watts_flag == '0') {
-                                        if(userExists[0].text_img != undefined && ListflagData.tele_photo_post == '1'){
-                                            teleAutoImgChannel(finalAmazon,userExists[0].text_img,"@dhamakaoffer11",ListflagData.kudart_token);
-                                          }else{
+                                        // if(userExists[0].text_img != undefined && ListflagData.tele_photo_post == '1'){
+                                        //     teleAutoImgChannel(finalAmazon,userExists[0].text_img,"@dhamakaoffer11",ListflagData.kudart_token);
+                                        //   }else{
                                             teleAutoPostChannel(finalAmazon,"@dhamakaoffer11",ListflagData.kudart_token);
-                                          }
+                                        //   }
                                     } else if (ListflagData.ihd_tele_flag == '0' && ListflagData.ihd_watts_flag == '1') {
                                         console.log('---1');
                                     } else {
@@ -1164,17 +1164,17 @@ function postConvert(userExists, ListflagData, bitly,uFinalUrl1,nextId,ListflagA
                                     if (ListflagData.ihd_tele_flag == '0' && ListflagData.ihd_watts_flag == '0') {
                                         console.log('---0');
                                     } else if (ListflagData.ihd_tele_flag == '1' && ListflagData.ihd_watts_flag == '1') {
-                                         if(userExists[0].text_img != undefined && ListflagData.tele_photo_post == '1'){
-                                            teleAutoImgChannel(finalAmazon,userExists[0].text_img,"@dhamakaoffer11",ListflagData.kudart_token);
-                                          }else{
+                                        //  if(userExists[0].text_img != undefined && ListflagData.tele_photo_post == '1'){
+                                        //     teleAutoImgChannel(finalAmazon,userExists[0].text_img,"@dhamakaoffer11",ListflagData.kudart_token);
+                                        //   }else{
                                             teleAutoPostChannel(finalAmazon,"@dhamakaoffer11",ListflagData.kudart_token);
-                                          }
+                                        //   }
                                     } else if (ListflagData.ihd_tele_flag == '1' && ListflagData.ihd_watts_flag == '0') {
-                                        if(userExists[0].text_img != undefined && ListflagData.tele_photo_post == '1'){
-                                            teleAutoImgChannel(finalAmazon,userExists[0].text_img,"@dhamakaoffer11",ListflagData.kudart_token);
-                                          }else{
+                                        // if(userExists[0].text_img != undefined && ListflagData.tele_photo_post == '1'){
+                                        //     teleAutoImgChannel(finalAmazon,userExists[0].text_img,"@dhamakaoffer11",ListflagData.kudart_token);
+                                        //   }else{
                                             teleAutoPostChannel(finalAmazon,"@dhamakaoffer11",ListflagData.kudart_token);
-                                          }
+                                        //   }
                                     } else if (ListflagData.ihd_tele_flag == '0' && ListflagData.ihd_watts_flag == '1') {
                                         console.log('---1');
                                     } else {
