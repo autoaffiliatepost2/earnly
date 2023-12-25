@@ -225,21 +225,22 @@ function postConvertAdmin(userExistsData, ListflagData, bitly,uFinalUrl1,nextId,
                                         final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), result.link);
                                     })
                                     .catch(function(error) {
-                                        tinyUrl1(dddd)
+                                        final[j] ='';
+                                        // tinyUrl1(dddd)
                                     });
                             }
 
-                            async function tinyUrl1(dddd) {
-                                await request({
-                                    uri: "http://tinyurl.com/api-create.php?url=" + dddd,
-                                    method: "GET",
-                                }, (err, response, body) => {
-                                    let responses = {
-                                        "link": body
-                                    };
-                                    final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
-                                })
-                            }
+                            // async function tinyUrl1(dddd) {
+                            //     await request({
+                            //         uri: "http://tinyurl.com/api-create.php?url=" + dddd,
+                            //         method: "GET",
+                            //     }, (err, response, body) => {
+                            //         let responses = {
+                            //             "link": body
+                            //         };
+                            //         final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
+                            //     })
+                            // }
 
                             function exampless(dddd) {
                                 final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), dddd);
@@ -420,20 +421,21 @@ function postConvertAdmin(userExistsData, ListflagData, bitly,uFinalUrl1,nextId,
                                             final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), result.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
                                         })
                                         .catch(function(error) {
-                                            tinyUrl2(dddd)
+                                        final[j] ='';
+                                            // tinyUrl2(dddd)
                                         });
                                 }
-                                async function tinyUrl2(dddd) {
-                                    await request({
-                                        uri: "http://tinyurl.com/api-create.php?url=" + dddd,
-                                        method: "GET",
-                                    }, (err, response, body) => {
-                                        let responses = {
-                                            "link": body
-                                        };
-                                        final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
-                                    })
-                                }
+                                // async function tinyUrl2(dddd) {
+                                //     await request({
+                                //         uri: "http://tinyurl.com/api-create.php?url=" + dddd,
+                                //         method: "GET",
+                                //     }, (err, response, body) => {
+                                //         let responses = {
+                                //             "link": body
+                                //         };
+                                //         final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
+                                //     })
+                                // }
                                 async function example3(dddd) {
                                     let response = await bitly
                                         .shorten(dddd)
@@ -441,7 +443,8 @@ function postConvertAdmin(userExistsData, ListflagData, bitly,uFinalUrl1,nextId,
                                             final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), result.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
                                         })
                                         .catch(function(error) {
-                                            tinyUrl2(dddd)
+                                            final[j] ='';
+                                            // tinyUrl2(dddd)
                                         });
                                 }
 
@@ -533,20 +536,21 @@ function postConvertAdmin(userExistsData, ListflagData, bitly,uFinalUrl1,nextId,
                                                     final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), result.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
                                                 })
                                                 .catch(function(error) {
-                                                    tinyUrl3(dddd)
+                                                     final[j] ='';
+                                                    // tinyUrl3(dddd)
                                                 });
                                         }
-                                        async function tinyUrl3(dddd) {
-                                            await request({
-                                                uri: "http://tinyurl.com/api-create.php?url=" + dddd,
-                                                method: "GET",
-                                            }, (err, response, body) => {
-                                                let responses = {
-                                                    "link": body
-                                                };
-                                                final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
-                                            })
-                                        }
+                                        // async function tinyUrl3(dddd) {
+                                        //     await request({
+                                        //         uri: "http://tinyurl.com/api-create.php?url=" + dddd,
+                                        //         method: "GET",
+                                        //     }, (err, response, body) => {
+                                        //         let responses = {
+                                        //             "link": body
+                                        //         };
+                                        //         final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
+                                        //     })
+                                        // }
 
                                         function example7(dddd) {
                                             final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), dddd);
@@ -754,21 +758,22 @@ function postConvert(userExists, ListflagData, bitly,uFinalUrl1,nextId,ListflagA
                                             final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), result.link);
                                         })
                                         .catch(function(error) {
-                                            tinyUrl1(dddd)
+                                            final[j] ='';
+                                            // tinyUrl1(dddd)
                                         });
                                 }
 
-                                async function tinyUrl1(dddd) {
-                                    await request({
-                                        uri: "http://tinyurl.com/api-create.php?url=" + dddd,
-                                        method: "GET",
-                                    }, (err, response, body) => {
-                                        let responses = {
-                                            "link": body
-                                        };
-                                        final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
-                                    })
-                                }
+                                // async function tinyUrl1(dddd) {
+                                //     await request({
+                                //         uri: "http://tinyurl.com/api-create.php?url=" + dddd,
+                                //         method: "GET",
+                                //     }, (err, response, body) => {
+                                //         let responses = {
+                                //             "link": body
+                                //         };
+                                //         final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
+                                //     })
+                                // }
 
                                 function exampless(dddd) {
                                     final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), dddd);
@@ -949,20 +954,21 @@ function postConvert(userExists, ListflagData, bitly,uFinalUrl1,nextId,ListflagA
                                                 final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), result.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
                                             })
                                             .catch(function(error) {
-                                                tinyUrl2(dddd)
+                                            final[j] ='';
+                                                // tinyUrl2(dddd)
                                             });
                                     }
-                                    async function tinyUrl2(dddd) {
-                                        await request({
-                                            uri: "http://tinyurl.com/api-create.php?url=" + dddd,
-                                            method: "GET",
-                                        }, (err, response, body) => {
-                                            let responses = {
-                                                "link": body
-                                            };
-                                            final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
-                                        })
-                                    }
+                                    // async function tinyUrl2(dddd) {
+                                    //     await request({
+                                    //         uri: "http://tinyurl.com/api-create.php?url=" + dddd,
+                                    //         method: "GET",
+                                    //     }, (err, response, body) => {
+                                    //         let responses = {
+                                    //             "link": body
+                                    //         };
+                                    //         final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
+                                    //     })
+                                    // }
                                     async function example3(dddd) {
                                         let response = await bitly
                                             .shorten(dddd)
@@ -970,7 +976,8 @@ function postConvert(userExists, ListflagData, bitly,uFinalUrl1,nextId,ListflagA
                                                 final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), result.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
                                             })
                                             .catch(function(error) {
-                                                tinyUrl2(dddd)
+                                            final[j] ='';
+                                                // tinyUrl2(dddd)
                                             });
                                     }
 
@@ -1062,20 +1069,21 @@ function postConvert(userExists, ListflagData, bitly,uFinalUrl1,nextId,ListflagA
                                                         final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), result.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
                                                     })
                                                     .catch(function(error) {
-                                                        tinyUrl3(dddd)
+                                            final[j] ='';
+                                                        // tinyUrl3(dddd)
                                                     });
                                             }
-                                            async function tinyUrl3(dddd) {
-                                                await request({
-                                                    uri: "http://tinyurl.com/api-create.php?url=" + dddd,
-                                                    method: "GET",
-                                                }, (err, response, body) => {
-                                                    let responses = {
-                                                        "link": body
-                                                    };
-                                                    final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
-                                                })
-                                            }
+                                            // async function tinyUrl3(dddd) {
+                                            //     await request({
+                                            //         uri: "http://tinyurl.com/api-create.php?url=" + dddd,
+                                            //         method: "GET",
+                                            //     }, (err, response, body) => {
+                                            //         let responses = {
+                                            //             "link": body
+                                            //         };
+                                            //         final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), responses.link).replace(/.#x...../g, ' %E2%99%A8 ').replace(/&/g, 'and').replace(/;/g, ' ');
+                                            //     })
+                                            // }
 
                                             function example7(dddd) {
                                                 final[j] = array[j].replace(urls[0].replace(/@/g, ' ').trim(), dddd);
