@@ -98,7 +98,7 @@ function posttele(bodyss, lastInsertId, lastArrayData) {
             console.log('err: ', err);
         }
         let ListflagData = flagData[0];
-        ListflagData.papa_post_tag = "sdcreation0cc-21";
+        ListflagData.papa_post_tag = "sdcreation054-21";
         let ListflagAmazon = "nonamazon";
         let bitly = new BitlyClient(ListflagData.current_bitly);
         let uFinalUrl1 = "https://bestshoppingdeal.in/v/index.html?trackurl=";
